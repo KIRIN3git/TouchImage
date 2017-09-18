@@ -54,6 +54,13 @@ public class MainActivity extends AppCompatActivity  implements View.OnTouchList
         Log.w( "DEBUG_DATA", "v.toString() " + v.toString());
         Log.w( "DEBUG_DATA", "v.getId() " + v.getId());
         Log.w( "DEBUG_DATA", "v.getResources() " + v.getResources());
+
+        // 画像のタッチ位置を取得
+        //X軸の取得
+        float pointX = event.getX();
+        //Y軸の取得
+        float pointY = event.getY();
+
         // イベントの状態を調べる
         switch (event.getAction() & MotionEvent.ACTION_MASK) {
 
